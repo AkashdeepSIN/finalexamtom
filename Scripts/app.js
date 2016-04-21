@@ -1,3 +1,4 @@
+// setup IIFE (Immediately Invoked Function Expression)
 function rollDice() {
         var die1 = document.getElementById("die1");
         var die2 = document.getElementById("die2");
@@ -5,10 +6,8 @@ function rollDice() {
         var d1 = Math.floor(Math.random() * 6) + 1;
         var d2 = Math.floor(Math.random() * 6) + 1;
         var diceTotal = d1 + d2;
-      
-        document.getElementById("die1Img").src = "dice"+die1+".png";
-       
-        document.getElementById("die2Img").src = "dice"+die2+".png";
+        die1.innerHTML = d1;
+        die2.innerHTML = d2;
         status.innerHTML = "You rolled " + diceTotal+".";
         if(d1 == d2) {
             status.innerHTML += "Doubles! You get a free turn!!";
@@ -19,5 +18,5 @@ function rollDice() {
         } else if (d1 === 1) {
 
         }
-
-    }
+console.log();
+}
