@@ -1,0 +1,11 @@
+/* custom syle sheet */
+body {
+	margin-left: 200px;
+}
+
+aside#one {
+float: left;	
+}
+aside#two {
+	float: right;
+}
