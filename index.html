@@ -2,53 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Content/app.css">
-    <title>Final</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!----------------Internal	Documentation------------------------->
+	<!--index.html> Hanvinder Singh Rai>Comp1073-Final Exam> 21/04/2016-->
+
+	<!----------------- CSS Section --------------------->
+	<link rel="stylesheet" href="css/app.css">
+	<title>Final exam</title>
 </head>
 
-<body>
-	<main>
-	<aside class="center">
+<body id="index">
 
-<div id="die1" class="dice"><img id="die1Img" src="images/dice4.jpg" alt="dice4" width="120px" height="120px"></img></div>
 
-    <div id="die2" class="dice"><img id="die2Img" src="images/dice5.jpg" alt="dice5"  width="120px" height="120px"></img></div>
-
-    <button onclick="rollDice()">Roll Dice</button>
-
-    <h2 id="status" style="clear:left;"></h2>
-    
-
-	</aside>
+	
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4 text-center">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
 
 
 
-	</main>
+		</head>
 
+		<body>
+			<!--First dice image and value-->
+			<section class="first">
+				<img src="img/d1.gif" name="mydice1">
+				<div id="die1" class="dice">0</div>
+			</section>
 
-    <footer>
+			<!--Second dice image and value-->
+			<section class="second">
+				<img src="img/d1.gif" name="mydice2">
+				<div id="die2" class="dice">0</div>
+			</section>
 
-    </footer>
+			<!--On click event button-->
+			<section class="button">
+				<input type="button" value="Throw dice!" onClick="throwdice()">
+				<section>
 
-
-
-    <!-- JavaScript Libraries Section -->
-    <script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
-    <script src="Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Scripts/lib/EaselJS/lib/easeljs-0.8.2.min.js"></script>
-    <script src="Scripts/lib/TweenJS/lib/tweenjs-0.6.2.min.js"></script>
-    <script src="Scripts/lib/SoundJS/lib/soundjs-0.6.2.min.js"></script>
-    <script src="Scripts/lib/PreloadJS/lib/preloadjs-0.6.2.min.js"></script>
-
-    <!-- App JavaScript -->
-    <script src="Scripts/app.js"></script>
-</body>
+	
+	<Js script section>
+		<script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
+		<script src="Scripts/app.js"></script>
+		</body>
 
 </html>

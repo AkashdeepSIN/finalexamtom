@@ -1,18 +1,4 @@
-/* custom syle sheet */
-body {
-	margin-left: 200px;
-}
-
-div#die1 {
-float: left;
-margin-top: 200px;
-margin-left: 350px;	
-}
-div#die2 {
-	float: right;
-	margin-top: 200px; 
-	margin-right: 400px;
-}
+/*Akashdeep Singh */
 
 button {
 	margin-top: 400px;
@@ -77,4 +63,16 @@ aside.cash {
    text-decoration: none;
    vertical-align: middle;
    
+}
+
+.first, .second{
+	float: left;
+	padding: 0 200px;
+	margin: 0 auto;
+}
+
+
+section.button{
+	clear: both;
+	margin: 0 auto;
 }
